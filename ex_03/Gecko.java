@@ -9,7 +9,7 @@ public class Gecko {
 
     public Gecko() {
         this.name = "Unknown";
-        System.out.println("Hello " + name + "!");
+        System.out.println("Hello!");
     }
 
     public String getName() {
