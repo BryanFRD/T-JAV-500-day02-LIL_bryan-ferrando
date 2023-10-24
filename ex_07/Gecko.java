@@ -86,13 +86,11 @@ public class Gecko {
 
     public void work(){
         if(energy >= 25){
-            for(int i = 0; i < 8; i++){
-                if(this.getEnergy() < 9)
-                    break;
+            if(this.getEnergy() < 9)
+                break;
 
-                System.out.println("I'm working T.T");
-                setEnergy(energy - 9);
-            }
+            System.out.println("I'm working T.T");
+            setEnergy(energy - 9);
         }else{
             System.out.println("Heyyy I'm too sleepy, better take a nap!");
             setEnergy(energy + 50);
