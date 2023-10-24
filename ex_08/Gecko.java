@@ -2,8 +2,8 @@ import ex_08.Snake;
 
 public class Gecko {
 
-    private String name;
-    private int age;
+    private String name = "Unknown";
+    private int age = 0;
     private int energy = 100;
 
     public Gecko(String name, int age) {
@@ -12,8 +12,12 @@ public class Gecko {
         System.out.println("Hello " + name + "!");
     }
 
+    public Gecko(String name){
+        this.name = name;
+        System.out.println("Hello " + name + "!");
+    }
+
     public Gecko() {
-        this.name = "Unknown";
         System.out.println("Hello!");
     }
 

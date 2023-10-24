@@ -1,6 +1,6 @@
 public class Gecko {
 
-    private String name;
+    private String name = "Unknown";
     private int age;
 
     public Gecko(String name, int age) {
@@ -9,8 +9,12 @@ public class Gecko {
         System.out.println("Hello " + name + "!");
     }
 
+    public Gecko(String name){
+        this.name = name;
+        System.out.println("Hello " + name + "!");
+    }
+
     public Gecko() {
-        this.name = "Unknown";
         System.out.println("Hello!");
     }
 
