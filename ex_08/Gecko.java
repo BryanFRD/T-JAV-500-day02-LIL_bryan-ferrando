@@ -102,12 +102,6 @@ public class Gecko {
     }
 
     public void fraternize(Gecko buddy){
-        setEnergy(this.energy - 30);
-        buddy.setEnergy(buddy.getEnergy() - 30);
-
-        System.out.println("I'm going to drink with " + this.getName() + "!");
-        System.out.println("I'm going to drink with " + buddy.getName() + "!");
-
         if(this.getEnergy() < 0 && buddy.getEnergy() < 0){
             System.out.println("Not today!");
             System.out.println("Not today!");
@@ -119,6 +113,12 @@ public class Gecko {
             System.out.println("Oh! That's too bad, another time then!.");
             return;
         }
+
+        setEnergy(this.energy - 30);
+        buddy.setEnergy(buddy.getEnergy() - 30);
+
+        System.out.println("I'm going to drink with " + this.getName() + "!");
+        System.out.println("I'm going to drink with " + buddy.getName() + "!");
     }
 
     public void fraternize(Snake snake){
