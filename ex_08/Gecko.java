@@ -123,6 +123,8 @@ public class Gecko {
         if(this.getEnergy() >= 10){
             System.out.println("LET'S RUN AWAY!!!");
             setEnergy(0);
+        } else {
+            System.out.println("...");
         }
     }
 
