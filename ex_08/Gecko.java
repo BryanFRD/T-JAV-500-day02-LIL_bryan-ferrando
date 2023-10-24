@@ -1,5 +1,3 @@
-import ex_08.Snake;
-
 public class Gecko {
 
     private String name = "Unknown";
