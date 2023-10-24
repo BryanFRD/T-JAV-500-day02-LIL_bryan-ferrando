@@ -1,4 +1,3 @@
-
 public class Gecko {
 
     public String name;
