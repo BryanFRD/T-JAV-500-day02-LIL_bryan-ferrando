@@ -108,7 +108,7 @@ public class Gecko {
 
         if(this.getEnergy() < 0 || buddy.getEnergy() < 0){
             System.out.println("Sorry " + (this.energy < 0 ? this.getName() : buddy.getName()) + ", I'm too tired to go out tonight.");
-            System.out.println("Oh! That's too bad, another time then!.");
+            System.out.println("Oh! That's too bad, another time then!");
             return;
         }
 
