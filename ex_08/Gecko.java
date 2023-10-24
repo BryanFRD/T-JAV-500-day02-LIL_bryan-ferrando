@@ -117,8 +117,8 @@ public class Gecko {
         setEnergy(this.energy - 30);
         buddy.setEnergy(buddy.getEnergy() - 30);
 
-        System.out.println("I'm going to drink with " + this.getName() + "!");
         System.out.println("I'm going to drink with " + buddy.getName() + "!");
+        System.out.println("I'm going to drink with " + this.getName() + "!");
     }
 
     public void fraternize(Snake snake){
