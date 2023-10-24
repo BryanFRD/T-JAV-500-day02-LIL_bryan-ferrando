@@ -85,10 +85,7 @@ public class Gecko {
     }
 
     public void work(){
-        if(energy >= 25){
-            if(this.getEnergy() < 9)
-                return;
-
+        if(this.getEnergy() >= 25){
             System.out.println("I'm working T.T");
             setEnergy(energy - 9);
         }else{
@@ -98,14 +95,14 @@ public class Gecko {
     }
 
     public void fraternize(Gecko buddy){
-        if(this.getEnergy() < 0 && buddy.getEnergy() < 0){
+        if(this.getEnergy() < 30 && buddy.getEnergy() < 30){
             System.out.println("Not today!");
             System.out.println("Not today!");
             return;
         }
 
-        if(this.getEnergy() < 0 || buddy.getEnergy() < 0){
-            System.out.println("Sorry " + (this.energy < 0 ? this.getName() : buddy.getName()) + ", I'm too tired to go out tonight.");
+        if(this.getEnergy() < 30 || buddy.getEnergy() < 30){
+            System.out.println("Sorry " + (this.getEnergy() < 30 ? this.getName() : buddy.getName()) + ", I'm too tired to go out tonight.");
             System.out.println("Oh! That's too bad, another time then!");
             return;
         }
