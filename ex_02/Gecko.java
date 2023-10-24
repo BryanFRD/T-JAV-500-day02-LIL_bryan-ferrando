@@ -1,7 +1,10 @@
 
 public class Gecko {
 
-    public Gecko(String name) {
+    public String name;
+
+    public Gecko(String name = "Unknown") {
+        this.name = name;
         System.out.println("Hello " + name + "!");
     }
 
